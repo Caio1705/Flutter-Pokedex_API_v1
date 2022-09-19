@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plants_app_v2/app/shared/widgets/container_text_type.dart';
+import 'package:flutter_plants_app_v2/app/shared/widgets/poke_stats/tab_views/next_and_previous_evolution.dart';
 import 'package:flutter_plants_app_v2/app/shared/widgets/poke_stats/tab_views/stats.dart';
 
 class ContainerStats extends StatelessWidget {
@@ -53,8 +54,10 @@ class ContainerStats extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              Stats(index: index),
-              ContainerTextType(
+              Stats(
+                index: index,
+              ),
+              NextAndPreviousEvolution(
                 index: index,
               ),
             ],

@@ -1,5 +1,8 @@
+// ignore_for_file: prefer_typing_uninitialized_variables, no_logic_in_create_state
+
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_plants_app_v2/app/data/services/pokedex_controller.dart';
 import 'package:flutter_plants_app_v2/app/views/data/pokemon_info_view.dart';
 import 'package:flutter_plants_app_v2/app/shared/constants/constants.dart';
@@ -8,13 +11,29 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:provider/provider.dart';
 
 class PokemonGrid extends StatefulWidget {
-  const PokemonGrid({super.key});
+  const PokemonGrid({
+    super.key,
+    required this.division,
+    required this.topPadding,
+  });
+  final topPadding;
+  final division;
 
   @override
-  State<PokemonGrid> createState() => _PokemonGridState();
+  State<PokemonGrid> createState() => _PokemonGridState(
+        division,
+        topPadding,
+      );
 }
 
 class _PokemonGridState extends State<PokemonGrid> {
+  _PokemonGridState(
+    this.division,
+    this.topPadding,
+  );
+  final division;
+  final topPadding;
+
   List? pokedex;
 
   Future<void> searchPokemonGOData() async {
@@ -59,10 +78,10 @@ class _PokemonGridState extends State<PokemonGrid> {
             ),
           )
         : SizedBox(
-            height: MediaQuery.of(context).size.height / 1.47,
+            height: MediaQuery.of(context).size.height / division,
             child: GridView.builder(
-              padding: const EdgeInsets.only(
-                top: 0,
+              padding: EdgeInsets.only(
+                top: topPadding,
                 bottom: Constants.screenPadding,
               ),
               gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(

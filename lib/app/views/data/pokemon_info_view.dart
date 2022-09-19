@@ -4,7 +4,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_plants_app_v2/app/shared/constants/constants.dart';
-import 'package:flutter_plants_app_v2/app/shared/widgets/container_text_type.dart';
 import 'package:flutter_plants_app_v2/app/shared/widgets/poke_stats/container_stats.dart';
 import 'package:http/http.dart' as http;
 

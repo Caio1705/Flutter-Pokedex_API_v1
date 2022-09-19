@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plants_app_v2/app/shared/constants/constants.dart';
 import 'package:flutter_plants_app_v2/app/shared/widgets/pokemon_grid.dart';
+import 'package:flutter_plants_app_v2/app/views/search_pokemon/search_pokemon_view.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter_plants_app_v2/app/shared/widgets/rounded_button.dart';
 
@@ -47,7 +48,14 @@ class HomePage extends StatelessWidget {
             ),
             RoundedButton(
               color: HexColor('E4E3E4'),
-              click: () {},
+              click: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SearchPokemonView(),
+                  ),
+                );
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
@@ -67,7 +75,10 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
-            const PokemonGrid(),
+            const PokemonGrid(
+              division: 1.47,
+              topPadding: 0.0,
+            ),
           ],
         ),
       ),

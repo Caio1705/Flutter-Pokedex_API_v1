@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plants_app_v2/app/data/services/pokedex_controller.dart';
-import 'package:flutter_plants_app_v2/app/views/data/pokemon_info_view.dart';
 import 'package:flutter_plants_app_v2/app/views/home/home_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -35,7 +34,7 @@ class Pokedex extends StatelessWidget {
             ),
           ),
         ),
-        home: HomePage(),
+        home: const HomePage(),
       ),
     );
   }

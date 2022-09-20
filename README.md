@@ -10,7 +10,12 @@ https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
 
 ## Getting Started
 
-![Screenshot_1663682848](https://user-images.githubusercontent.com/106937639/191281180-541fc410-9979-48d5-ad56-891fa8fef0a1.png)
-![Screenshot_1663682854](https://user-images.githubusercontent.com/106937639/191281187-c5cafa45-7ff9-40e2-a3dd-c9abd13114b1.png)
-![Screenshot_1663682858](https://user-images.githubusercontent.com/106937639/191281190-39c9b3cc-2ee8-4cbc-a26a-587ffb4fb456.png)
-![Screenshot_1663682873](https://user-images.githubusercontent.com/106937639/191281195-4971fa4e-d6bd-4686-8249-fd5f0aabce07.png)
+Home Page             |  Home Page
+:-------------------------:|:-------------------------:
+![Screenshot_1663682848](https://user-images.githubusercontent.com/106937639/191281180-541fc410-9979-48d5-ad56-891fa8fef0a1.png) |  ![Screenshot_1663682854](https://user-images.githubusercontent.com/106937639/191281187-c5cafa45-7ff9-40e2-a3dd-c9abd13114b1.png)
+Info Page Stats            |  Info Page Evolutions
+:-------------------------:|:-------------------------:
+![Screenshot_1663682858](https://user-images.githubusercontent.com/106937639/191281190-39c9b3cc-2ee8-4cbc-a26a-587ffb4fb456.png)  |  ![Screenshot_1663682873](https://user-images.githubusercontent.com/106937639/191281195-4971fa4e-d6bd-4686-8249-fd5f0aabce07.png)
+
+
+

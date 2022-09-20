@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_plants_app_v2/app/shared/constants/constants.dart';
 import 'package:flutter_plants_app_v2/app/shared/widgets/pokemon_grid.dart';
+import 'package:flutter_plants_app_v2/app/views/config/config.dart';
 import 'package:flutter_plants_app_v2/app/views/search_pokemon/search_pokemon_view.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter_plants_app_v2/app/shared/widgets/rounded_button.dart';
@@ -29,7 +30,14 @@ class HomePage extends StatelessWidget {
                   style: Theme.of(context).textTheme.headline6,
                 ),
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Config(),
+                      ),
+                    );
+                  },
                   icon: Icon(
                     Icons.settings_outlined,
                     color: Colors.grey.shade700,
@@ -52,7 +60,7 @@ class HomePage extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => SearchPokemonView(),
+                    builder: (context) => const SearchPokemonView(),
                   ),
                 );
               },

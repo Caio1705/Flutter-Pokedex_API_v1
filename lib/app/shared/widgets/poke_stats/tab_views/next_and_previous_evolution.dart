@@ -117,7 +117,7 @@ class _NextAndPreviousEvolutionState extends State<NextAndPreviousEvolution> {
                                 ),
                               ),
                               SizedBox(
-                                height: 95,
+                                height: 147.5,
                                 width: double.infinity,
                                 child: ListView.builder(
                                   itemCount:

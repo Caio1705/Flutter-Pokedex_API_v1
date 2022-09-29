@@ -4,7 +4,7 @@
 Esse foi um desafio em Flutter para consumo de uma API que uma empresa me apresentou como um teste técnico, infelizmente na época eu não consegui terminar o teste pois ainda não estava nem um pouco familiarizado com APIs como estou hoje em dia.
 Hoje eu refiz o teste e deu tudo certo, uma pena eu não ter conseguido a vaga na época sendo que agora estou apto a consumir uma API, porém acontece! Vou continuar com meus projetos até conseguir minha querida vaga!
 
-API utilizada (json): 
+API utilizada(json): 
 
 https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json
 
